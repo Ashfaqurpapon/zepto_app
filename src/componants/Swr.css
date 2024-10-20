@@ -1,0 +1,222 @@
+/* Book list container */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 20px; /* Spacing between cards */
+  margin: 20px 0;
+}
+
+/* Book card styling */
+.book-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.book-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+/* Book card styling */
+.book-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Lifts and enlarges the card slightly */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Deepens shadow for hover effect */
+}
+
+/* Adding hover effect for image and text */
+.book-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+}
+
+.book-card:hover img {
+  transform: scale(1.1); /* Slightly zooms in on the image */
+}
+
+/* Adding hover animation for title */
+.book-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.book-card:hover h3 {
+  color: #fe5b3d; /* Changes title color on hover */
+}
+
+/* Adding hover animation for genre and author text */
+.book-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.book-card:hover p {
+  color: #fe5b3d; /* Changes text color on hover */
+}
+
+/* Heart icon animation */
+.heart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2); /* Enlarges heart icon slightly */
+}
+
+.heart-icon.wishlisted {
+  color: red;
+}
+
+/* Animation for wishlist toggle */
+.heart-icon:active {
+  transform: scale(0.9); /* Shrinks the heart icon briefly when clicked */
+}
+
+/* Heart icon styling */
+.heart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.heart-icon.wishlisted {
+  color: red;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #fe5b3d;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+/* Search Bar Styling */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.search-bar:focus {
+  border-color: #fe5b3d;
+  box-shadow: 0 0 8px rgba(254, 91, 61, 0.2);
+}
+
+/* Dropdown Genre Filter Styling */
+.genre-dropdown {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.genre-dropdown:focus {
+  border-color: #fe5b3d;
+  box-shadow: 0 0 8px rgba(254, 91, 61, 0.2);
+}
+
+/* Hover effect for dropdown options */
+.genre-dropdown option {
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.genre-dropdown option:hover {
+  background-color: #f2f2f2;
+}
+
+/* Enhancing the overall layout of search and dropdown */
+.search-bar,
+.genre-dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1200px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .book-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .book-list {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
