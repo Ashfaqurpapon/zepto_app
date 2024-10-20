@@ -12,7 +12,7 @@ Zeptobook is a simple book browsing web application that leverages [useSWR](http
 
 ## Demo
 
-You can try out the application by visiting the following link: [Live Demo](https://vercel.com/ashfaqur-papon/zepto-app-zold)
+You can try out the application by visiting the following link: [Live Demo](https://zepto-app-zold.vercel.app/)
 
 ## Technologies Used
 
