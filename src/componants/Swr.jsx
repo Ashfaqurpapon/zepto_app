@@ -18,7 +18,7 @@ const Swr = () => {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [booksPerPage] = useState(4); // Books per page
+  const [booksPerPage] = useState(6); // Books per page
 
   // Load wishlist from localStorage on component mount
   useEffect(() => {
