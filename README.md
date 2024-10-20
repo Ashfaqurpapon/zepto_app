@@ -1,6 +1,6 @@
 # Zeptobook
 
-Zeptobook is a simple book browsing web application that leverages [useSWR](https://swr.vercel.app/) to fetch and display book data from the Gutenberg Project API. Users can search for books by title, filter by genre, and add/remove books to/from their wishlist. The application also includes pagination for easier navigation through a large number of books.
+Zeptobook is a simple book browsing web application that leverages [useSWR](https://gutendex.com/books) to fetch and display book data from the Gutenberg Project API. Users can search for books by title, filter by genre, and add/remove books to/from their wishlist. The application also includes pagination for easier navigation through a large number of books.
 
 ## Features
 
@@ -12,7 +12,7 @@ Zeptobook is a simple book browsing web application that leverages [useSWR](http
 
 ## Demo
 
-You can try out the application by visiting the following link: [Live Demo](#)
+You can try out the application by visiting the following link: [Live Demo](#https://vercel.com/ashfaqur-papon/zepto-app-zold)
 
 ## Technologies Used
 
